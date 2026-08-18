@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Just For You ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="floating-hearts">
+  ❤️ 💕 💗 💖 💞 💓 ♡ ❤️ 💕
+</div>
+
+<!-- PAGE 1 -->
+<section class="page active" id="page1">
+  <div class="card">
+    <div class="teddy">🧸💕</div>
+
+    <p class="small">Before you enter my little world...</p>
+
+    <h1>Oka small question ❤️</h1>
+
+    <p>What is your date of birth?</p>
+
+    <button onclick="wrong(1)">July 2nd</button>
+
+    <button onclick="correct1()">
+      July 2nd & Nov 7th 💗
+    </button>
+
+    <button onclick="wrong(1)">November 7th</button>
+
+    <p id="wrong1" class="wrong"></p>
+  </div>
+</section>
+
+
+<!-- PAGE 2 -->
+<section class="page" id="page2">
+  <div class="card">
+
+    <div class="teddy">🧸🌸</div>
+
+    <p class="small">Correct answer... 💗</p>
+
+    <h1>One tiny puzzle for you</h1>
+
+    <div class="puzzle">
+      ❤️ + 🧸 + ❤️
+      <br>
+      = ?
+    </div>
+
+    <button onclick="wrong(2)">Just a memory</button>
+
+    <button onclick="correct2()">Our little world 💕</button>
+
+    <button onclick="wrong(2)">Nothing</button>
+
+    <p id="wrong2" class="wrong"></p>
+  </div>
+</section>
+
+
+<!-- PAGE 3 -->
+<section class="page" id="page3">
+  <div class="card emotional">
+
+    <div class="teddy">🧸❤️🧸</div>
+
+    <p class="small">Now... read this slowly.</p>
+
+    <h2>First nunchi...</h2>
+
+    <p class="telugu">
+      నా ఈ జీవితం అనే<br>
+      చిన్న రాజ్యంలో...
+    </p>
+
+    <p class="queen">
+      రాణి నువ్వు ❤️
+    </p>
+
+    <div class="line"></div>
+
+    <p class="love">
+      I love yoouuuhh maaah 💗
+    </p>
+
+    <button onclick="nextPage(4)">
+      One more thing... 💕
+    </button>
+
+  </div>
+</section>
+
+
+<!-- PAGE 4 -->
+<section class="page" id="page4">
+  <div class="card emotional">
+
+    <div class="teddy">🧸💗</div>
+
+    <h1>Konni moments...</h1>
+
+    <p class="message">
+      Life lo konni people<br>
+      just people ga raaaru...
+    </p>
+
+    <p class="message">
+      vallatho vachina memories<br>
+      mana life lo oka special place<br>
+      create chestayi. ❤️
+    </p>
+
+    <p class="message">
+      Anduke ee small website...
+      <br>
+      just for you. 💕
+    </p>
+
+    <button onclick="nextPage(5)">
+      Keep going ❤️
+    </button>
+
+  </div>
+</section>
+
+
+<!-- PAGE 5 -->
+<section class="page" id="page5">
+  <div class="card emotional">
+
+    <div class="teddy">🌸🧸🌸</div>
+
+    <p class="small">And finally...</p>
+
+    <p class="forever">
+      నేను ఇప్పటికీ...<br>
+      ఎప్పటికీ...
+    </p>
+
+    <h1>నీ వాడినే ❤️</h1>
+
+    <p class="love">
+      I love yoouuuhh 💕
+    </p>
+
+    <div class="photo-box">
+      <img src="assets/memory-photo.jpg" alt="Our memory">
+    </div>
+
+    <button onclick="nextPage(6)">
+      Last question... 🥹
+    </button>
+
+  </div>
+</section>
+
+
+<!-- PAGE 6 -->
+<section class="page" id="page6">
+  <div class="card emotional">
+
+    <div class="teddy">🧸❤️🧸</div>
+
+    <h1>Oka last question...</h1>
+
+    <p class="final-question">
+      నువ్వు నాతో<br>
+      happy గానే ఉన్నావా? 🥹❤️
+    </p>
+
+    <button onclick="yesAnswer()">
+      1. అవును 💗
+    </button>
+
+    <button onclick="noAnswer()">
+      2. లేను
+    </button>
+
+    <p id="finalMessage"></p>
+
+  </div>
+</section>
+
+
+<!-- FINAL -->
+<section class="page" id="page7">
+  <div class="card final">
+
+    <div class="big-teddy">
+      🧸🤗🧸
+    </div>
+
+    <h1>Yayyy! ❤️</h1>
+
+    <p class="message">
+      Ee answer kosame<br>
+      ee little website motham. 💕
+    </p>
+
+    <p class="love">
+      Always keep smiling 🌸
+    </p>
+
+    <div class="hearts-big">
+      ❤️ 💕 ❤️ 💕 ❤️
+    </div>
+
+  </div>
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
