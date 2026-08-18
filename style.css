@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Poppins, sans-serif;
+
+  background:
+    radial-gradient(circle at top left, #ffdce7, transparent 35%),
+    radial-gradient(circle at bottom right, #ffc9da, transparent 35%),
+    linear-gradient(135deg, #fff7fa, #ffe5ee);
+
+  color: #633143;
+  overflow-x: hidden;
+}
+
+.page {
+  display: none;
+  min-height: 100vh;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+}
+
+.page.active {
+  display: flex;
+  animation: pageIn 0.8s ease;
+}
+
+.card {
+  width: 100%;
+  max-width: 520px;
+
+  padding: 35px 25px;
+
+  text-align: center;
+
+  background: rgba(255,255,255,0.78);
+
+  border-radius: 30px;
+
+  box-shadow:
+    0 20px 60px rgba(180,70,110,0.18);
+
+  backdrop-filter: blur(15px);
+}
+
+.teddy {
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+
+.small {
+  color: #b86a82;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: #963653;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #963653;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 100%;
+  border: none;
+
+  padding: 14px;
+  margin-top: 11px;
+
+  border-radius: 18px;
+
+  background: white;
+
+  color: #7e3852;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  box-shadow: 0 7px 20px rgba(180,70,110,0.12);
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+.wrong {
+  min-height: 25px;
+  margin-top: 12px;
+  color: #d84d73;
+}
+
+.puzzle {
+  font-size: 30px;
+  line-height: 2;
+  margin: 20px;
+}
+
+.emotional {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.telugu {
+  font-size: 24px;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+.queen {
+  font-size: 32px;
+  font-weight: 700;
+  color: #df4f78;
+  margin-top: 8px;
+}
+
+.line {
+  width: 70px;
+  height: 3px;
+
+  margin: 25px auto;
+
+  background: #ed7798;
+  border-radius: 10px;
+}
+
+.love {
+  font-family: Pacifico, cursive;
+
+  font-size: 28px;
+
+  color: #e64e79;
+
+  margin: 20px 0;
+}
+
+.message {
+  font-size: 18px;
+  line-height: 2;
+
+  margin: 18px 0;
+
+  color: #704052;
+}
+
+.forever {
+  font-size: 26px;
+  line-height: 1.8;
+  color: #73354b;
+}
+
+.photo-box {
+  background: white;
+  padding: 8px;
+
+  border-radius: 22px;
+
+  margin: 22px auto;
+
+  width: min(100%, 380px);
+
+  box-shadow: 0 15px 35px rgba(120,50,75,0.18);
+}
+
+.photo-box img {
+  width: 100%;
+
+  display: block;
+
+  border-radius: 16px;
+}
+
+.final-question {
+  font-size: 23px;
+  line-height: 1.7;
+
+  color: #73354b;
+
+  margin-bottom: 18px;
+}
+
+#finalMessage {
+  color: #d74f75;
+  margin-top: 15px;
+}
+
+.big-teddy {
+  font-size: 80px;
+  margin-bottom: 15px;
+
+  animation: bounce 1s infinite alternate;
+}
+
+.hearts-big {
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+.floating-hearts {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  pointer-events: none;
+
+  opacity: 0.4;
+
+  font-size: 22px;
+
+  word-spacing: 25px;
+
+  line-height: 70px;
+
+  animation: float 12s linear infinite;
+
+  z-index: 0;
+}
+
+.card {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes pageIn {
+
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+}
+
+@keyframes float {
+
+  from {
+    transform: translateY(100vh);
+  }
+
+  to {
+    transform: translateY(-100vh);
+  }
+
+}
+
+@keyframes bounce {
+
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-12px);
+  }
+
+}
+
+@media(max-width:420px) {
+
+  .card {
+    padding: 28px 17px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .telugu {
+    font-size: 21px;
+  }
+
+  .love {
+    font-size: 25px;
+  }
+
+}
